@@ -28,50 +28,62 @@ import PasteFromOffice from '@ckeditor/ckeditor5-paste-from-office/src/pastefrom
 import Table from '@ckeditor/ckeditor5-table/src/table';
 import TableToolbar from '@ckeditor/ckeditor5-table/src/tabletoolbar';
 
+import Plugin from '@ckeditor/ckeditor5-core/src/plugin';
+
+import { InsertImage } from './B2BAddImagePlugin';
+
+// export class InsertImage extends Plugin {
+//     init() {
+//         console.log( 'InsertImage was initialized' );
+//     }
+// }
+
 export default class ClassicEditor extends ClassicEditorBase {}
 
 // Plugins to include in the build.
 ClassicEditor.builtinPlugins = [
+	// VazgenInsertImagePlugin,
+	InsertImage,
 	Essentials,
-	UploadAdapter,
-	Autoformat,
+	// UploadAdapter,
+	// Autoformat,
 	Bold,
 	Italic,
-	BlockQuote,
-	CKFinder,
-	EasyImage,
-	Heading,
-	Image,
-	ImageCaption,
-	ImageStyle,
-	ImageToolbar,
-	ImageUpload,
-	Link,
-	List,
-	MediaEmbed,
-	Paragraph,
-	PasteFromOffice,
-	Table,
-	TableToolbar
+	// BlockQuote,
+	// CKFinder,
+	// EasyImage,
+	// Heading,
+	// Image,
+	// ImageCaption,
+	// ImageStyle,
+	// ImageToolbar,
+	// ImageUpload,
+	// Link,
+	// List,
+	// MediaEmbed,
+	// Paragraph,
+	// PasteFromOffice,
+	// Table,
+	// TableToolbar
 ];
 
 // Editor configuration.
 ClassicEditor.defaultConfig = {
 	toolbar: {
 		items: [
-			'heading',
-			'|',
+			// 'heading',
+			// '|',
 			'bold',
 			'italic',
-			'link',
-			'bulletedList',
-			'numberedList',
-			'imageUpload',
-			'blockQuote',
-			'insertTable',
-			'mediaEmbed',
-			'undo',
-			'redo'
+			// 'link',
+			// 'bulletedList',
+			// 'numberedList',
+			// 'imageUpload',
+			// 'blockQuote',
+			// 'insertTable',
+			// 'mediaEmbed',
+			// 'undo',
+			// 'redo'
 		]
 	},
 	image: {

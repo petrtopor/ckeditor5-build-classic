@@ -18,9 +18,9 @@ export class InsertImage extends Plugin {
 
       // Callback executed once the image is clicked.
       view.on( 'execute', () => {
-        // const imageURL = prompt( 'Image URL' );
-        // console.log("document.getElementById(\"header\")", document.getElementById("header"));
-        document.getElementById("header").innerText = "sdf"
+        console.log("'InsertImage' plugin B2B family is activated!");
+
+        
       } );
 
       return view;

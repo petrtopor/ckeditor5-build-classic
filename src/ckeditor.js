@@ -44,7 +44,7 @@ export default class ClassicEditor extends ClassicEditorBase {}
 ClassicEditor.builtinPlugins = [
 	// VazgenInsertImagePlugin,
 	InsertImage,
-	Essentials,
+	// Essentials,
 	// UploadAdapter,
 	// Autoformat,
 	Bold,
@@ -75,10 +75,11 @@ ClassicEditor.defaultConfig = {
 			// '|',
 			'bold',
 			'italic',
+			'insertImage',
 			// 'link',
 			// 'bulletedList',
 			// 'numberedList',
-			// 'imageUpload',
+			// 'imageUpload'
 			// 'blockQuote',
 			// 'insertTable',
 			// 'mediaEmbed',

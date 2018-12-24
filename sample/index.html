@@ -28,7 +28,7 @@
 
 <script src="../build/ckeditor.js"></script>
 <script>
-	ClassicEditor.create( document.querySelector( '#editor' ), { toolbar: ['insertImage'] } )
+	ClassicEditor.create( document.querySelector( '#editor' )/*, { toolbar: ['insertImage'] }*/ )
 		.then( editor => {
 			console.log("The main editor has been created successfully.");
 			window.editor = editor;

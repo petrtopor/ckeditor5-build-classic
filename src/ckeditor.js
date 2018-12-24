@@ -32,6 +32,8 @@ import Plugin from '@ckeditor/ckeditor5-core/src/plugin';
 
 import { InsertImage } from './B2BAddImagePlugin';
 
+import Emoji from '@wwalc/ckeditor5-emoji/src/emoji';
+
 // export class InsertImage extends Plugin {
 //     init() {
 //         console.log( 'InsertImage was initialized' );
@@ -43,6 +45,7 @@ export default class ClassicEditor extends ClassicEditorBase {}
 // Plugins to include in the build.
 ClassicEditor.builtinPlugins = [
 	// VazgenInsertImagePlugin,
+	Emoji,
 	InsertImage,
 	// Essentials,
 	// UploadAdapter,
@@ -76,6 +79,7 @@ ClassicEditor.defaultConfig = {
 			'bold',
 			'italic',
 			'insertImage',
+			'emoji'
 			// 'link',
 			// 'bulletedList',
 			// 'numberedList',

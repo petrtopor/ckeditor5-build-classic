@@ -79,7 +79,8 @@ ClassicEditor.defaultConfig = {
 			'imageStyle:full',
 			'imageStyle:side',
 			'|',
-			'imageTextAlternative'
+			'imageTextAlternative',
+			'ImageProperties'
 		]
 	},
 	table: {
